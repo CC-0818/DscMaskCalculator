@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>Calculator.ico</file>
+        <file>Dark.png</file>
+        <file>Light.png</file>
+        <file>hoverChecked.png</file>
+        <file>hoverUnCheck.png</file>
+        <file>indicatorChecked.png</file>
+        <file>indicatorUnCheck.png</file>
+    </qresource>
+</RCC>
