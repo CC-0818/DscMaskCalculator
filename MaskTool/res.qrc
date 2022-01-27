@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>resources/win.ico</file>
+    </qresource>
+    <qresource prefix="/svg">
+        <file>resources/close grey_48.svg</file>
+        <file>resources/close_red_48.svg</file>
+        <file>resources/circle_cyan.svg</file>
+        <file>resources/round_green.svg</file>
+        <file>resources/round_red.svg</file>
+        <file>resources/save.svg</file>
+        <file>resources/init.svg</file>
+        <file>resources/add.svg</file>
+        <file>resources/delete.svg</file>
+    </qresource>
+</RCC>

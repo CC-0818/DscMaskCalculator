@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>818</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>618</width>
+    <height>818</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Mask Tool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icon/resources/win.ico</normaloff>:/icon/resources/win.ico</iconset>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Widget{
+	background-color: rgba(0, 0, 0, 0);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="MyFrame" name="m_frame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>800</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>600</width>
+       <height>800</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>600</width>
+       <height>800</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#Widget QFrame#m_frame{
+	border-style: 1px solid;
+	border-radius: 15px;
+	background-color: rgba(31, 35, 42, 0.7);
+}
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="m_closeButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="whatsThis">
+       <string>exit application</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QWidget#Widget QPushButton#m_closeButton {
+	background-color: rgba(0 , 0, 0, 0);
+	border-image: url(:/svg/resources/close grey_48.svg);
+}
+
+QWidget#Widget QPushButton#m_closeButton:hover {
+	border-image: url(:/svg/resources/close_red_48.svg);
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="MyLineEdit" name="m_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>60</y>
+        <width>200</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Cascadia Code</family>
+        <pointsize>24</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#m_frame QLineEdit#m_lineEdit{
+	color: #00ef8f;
+	border-style: none;
+	border-radius: 30;
+	background-color: rgba(46, 45, 44, 0.5);
+}
+QFrame#m_frame QLineEdit#m_lineEdit:hover{
+	background-color: rgba(46, 45, 44, 0.8);
+}
+QFrame#m_frame QLineEdit#m_lineEdit:focus{
+	background-color: rgba(46, 45, 44, 1);
+}
+
+</string>
+      </property>
+      <property name="inputMask">
+       <string/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="maxLength">
+       <number>16</number>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>input mask</string>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::VisualMoveStyle</enum>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="m_scroll_area">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>560</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#Widget QScrollArea#m_scroll_area {
+	background-color:   rgba(0 ,0,0,0);	
+	border-style: dotted  dotted dotted dotted;
+	border-width:  3px; 
+	border-radius: 15px;
+	border-color: rgba(43,43,43,0.5);
+	margin-right: 4px; 
+}
+
+QWidget#Widget QScrollArea#m_scroll_area  QScrollBar {
+	background-color: rgba(0,0,0,0); 
+	width:8px; 
+	margin:4px 1px 4px 1px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+QWidget#Widget QScrollArea#m_scroll_area  QScrollBar::handle {
+	background-color:rgba(46,45,44,0.2); 
+	width:6px;
+ 	border-radius:3px;
+}
+
+QWidget#Widget QScrollArea#m_scroll_area  QScrollBar::handle:hover {
+	background:rgba(46,45,44,1);
+}
+
+QWidget#Widget QScrollArea#m_scroll_area  QScrollBar::add-line, QScrollBar::sub-line {
+	border:none;
+}
+
+QWidget#Widget QScrollArea#m_scroll_area QScrollBar::add-page,QScrollBar::sub-page {
+	border:none;
+}
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QWidget" name="m_scroll_area_widget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>550</width>
+         <height>598</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget#Widget QScrollArea#m_scroll_area QWidget#m_scroll_area_widget {
+	background-color: transparent;
+ 	border-style: none;
+}</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="m_save_button">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="whatsThis">
+       <string>exit application</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QWidget#Widget QPushButton#m_save_button {
+	background-color: rgba(46 , 45, 44, 0);
+	border-image: url(:/svg/resources/save.svg) 80% no-repeat;
+	border-style: none;
+	border-radius: 15px;
+}
+
+QWidget#Widget QPushButton#m_save_button:hover {
+	background-color: rgba(46 , 45, 44, 0.4);
+}
+
+QWidget#Widget QPushButton#m_save_button:pressed {
+	background-color: rgba(46 , 45, 44, 0.7);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="m_init_button">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="whatsThis">
+       <string>exit application</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QWidget#Widget QPushButton#m_init_button {
+	background-color: rgba(46 , 45, 44, 0);
+	border-image: url(:/svg/resources/init.svg) 80% no-repeat;
+	border-style: none;
+	border-radius: 15px;
+}
+
+QWidget#Widget QPushButton#m_init_button:hover {
+	background-color: rgba(46 , 45, 44, 0.4);
+}
+
+QWidget#Widget QPushButton#m_init_button:pressed {
+	background-color: rgba(46 , 45, 44, 0.7);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyFrame</class>
+   <extends>QFrame</extends>
+   <header location="global">myframe.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MyLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">mylineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>m_closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
